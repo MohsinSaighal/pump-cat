@@ -22,12 +22,12 @@ export function Footer() {
               The cat that pumps charts harder than your favorite meme coin, exclusively on Base chain.
             </p>
             <div className="flex gap-4">
-              <Link href="https://twitter.com/pumpcat" target="_blank" rel="noopener noreferrer">
+              <Link href="https://x.com/SunfaceAI" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="icon" className="text-white hover:text-green-400">
                   <Twitter className="h-5 w-5" />
                 </Button>
               </Link>
-              <Link href="https://t.me/pumpcat" target="_blank" rel="noopener noreferrer">
+              <Link href="https://t.me/pumpcatofficial" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="icon" className="text-white hover:text-green-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

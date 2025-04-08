@@ -89,7 +89,7 @@ export function AboutSection() {
               </p>
               <div className="flex items-center gap-4 bg-black/60 p-3 rounded-lg">
                 <span className="text-white/70 text-sm">Contract:</span>
-                <code className="text-green-400 text-sm">0x42069PumpCat...420</code>
+                <code className="text-green-400 text-sm">0x84773a9006d0587c1eAd066160ba00b5aE54E84d</code>
                 <button className="text-green-500 hover:text-green-400 h-6 w-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
