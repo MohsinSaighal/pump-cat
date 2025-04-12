@@ -1,4 +1,6 @@
 export function HowToBuy() {
+  const contractAddress = "0x84773a9006d0587c1eAd066160ba00b5aE54E84d";
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div className="bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-green-500/20 hover:border-green-500/50 transition-all duration-300">
@@ -7,14 +9,7 @@ export function HowToBuy() {
         </div>
         <h3 className="text-xl font-bold text-center mb-4 text-white">Create a Wallet</h3>
         <p className="text-white/70 text-center mb-4">Download MetaMask or Coinbase Wallet and set up your wallet.</p>
-        <div className="flex justify-center gap-4">
-          <img src="/metamask-logo.png" alt="MetaMask" className="h-8 w-8 opacity-70 hover:opacity-100 transition" />
-          <img
-            src="/coinbase-wallet-logo.png"
-            alt="Coinbase Wallet"
-            className="h-8 w-8 opacity-70 hover:opacity-100 transition"
-          />
-        </div>
+       
       </div>
 
       <div className="bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-green-500/20 hover:border-green-500/50 transition-all duration-300">
@@ -23,26 +18,20 @@ export function HowToBuy() {
         </div>
         <h3 className="text-xl font-bold text-center mb-4 text-white">Get ETH on Base</h3>
         <p className="text-white/70 text-center mb-4">
-          Purchase ETH and bridge it to Base chain using the Base Bridge or Coinbase.
+          Purchase ETH and bridge it to Base chain using the Base Bridge or buy directly on Coinbase.
         </p>
-        <div className="flex justify-center gap-4">
-          <img src="/ethereum-logo.png" alt="Ethereum" className="h-8 w-8 opacity-70 hover:opacity-100 transition" />
-          <img src="/base-logo.png" alt="Base" className="h-8 w-8 opacity-70 hover:opacity-100 transition" />
-        </div>
+     
       </div>
 
       <div className="bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-green-500/20 hover:border-green-500/50 transition-all duration-300">
         <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mb-6 mx-auto">
           <span className="text-green-500 font-bold text-xl">3</span>
         </div>
-        <h3 className="text-xl font-bold text-center mb-4 text-white">Connect to BaseSwap</h3>
+        <h3 className="text-xl font-bold text-center mb-4 text-white">Connect to PancakeSwap</h3>
         <p className="text-white/70 text-center mb-4">
-          Visit BaseSwap or Aerodrome and connect your wallet to the DEX.
+          Visit PancakeSwap and switch to Base network before connecting your wallet.
         </p>
-        <div className="flex justify-center gap-4">
-          <img src="/baseswap-logo.png" alt="BaseSwap" className="h-8 w-8 opacity-70 hover:opacity-100 transition" />
-          <img src="/aerodrome-logo.png" alt="Aerodrome" className="h-8 w-8 opacity-70 hover:opacity-100 transition" />
-        </div>
+     
       </div>
 
       <div className="bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-green-500/20 hover:border-green-500/50 transition-all duration-300">
@@ -55,7 +44,7 @@ export function HowToBuy() {
         </p>
         <div className="flex justify-center">
           <div className="px-4 py-2 bg-green-500/20 rounded-lg text-green-500 text-sm font-mono">
-            0x42069PumpCat...420
+          {`${contractAddress.slice(0, 6)}...${contractAddress.slice(-4)}`}
           </div>
         </div>
       </div>
@@ -64,12 +53,12 @@ export function HowToBuy() {
         <h3 className="text-xl font-bold text-center mb-4 text-white">Detailed Guide for Base Chain</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <h4 className="text-green-400 font-bold mb-2">Setting Up Base Network in MetaMask</h4>
+            <h4 className="text-green-400 font-bold mb-2">Setting Up Base Network</h4>
             <ol className="list-decimal list-inside text-white/70 space-y-2">
-              <li>Open MetaMask and click on the network dropdown at the top</li>
-              <li>Select "Add Network"</li>
+              <li>Open your wallet and click on the network dropdown</li>
+              <li>Select "Add Network" or "Add Custom RPC"</li>
               <li>
-                Enter the following details:
+                Enter these Base network details:
                 <ul className="list-disc list-inside ml-6 mt-1">
                   <li>Network Name: Base</li>
                   <li>RPC URL: https://mainnet.base.org</li>
@@ -78,18 +67,20 @@ export function HowToBuy() {
                   <li>Block Explorer: https://basescan.org</li>
                 </ul>
               </li>
-              <li>Click "Save" to add Base network</li>
+              <li>Save the network and switch to Base</li>
             </ol>
           </div>
           <div>
-            <h4 className="text-green-400 font-bold mb-2">Bridging ETH to Base</h4>
+            <h4 className="text-green-400 font-bold mb-2">Buying on PancakeSwap (Base)</h4>
             <ol className="list-decimal list-inside text-white/70 space-y-2">
-              <li>Visit the official Base Bridge at bridge.base.org</li>
+              <li>Go to pancakeswap.finance</li>
+              <li>Click the network selector and choose "Base"</li>
               <li>Connect your wallet</li>
-              <li>Select Ethereum as the source and Base as the destination</li>
-              <li>Enter the amount of ETH you want to bridge</li>
-              <li>Confirm the transaction and wait for it to complete (usually takes 10-15 minutes)</li>
-              <li>Alternatively, you can buy ETH directly on Base through Coinbase</li>
+              <li>Click "Trade" then "Swap"</li>
+              <li>Select ETH as the "From" token</li>
+              <li>Paste $PCAT contract address in the "To" field</li>
+              <li>Set slippage tolerance to 7-10%</li>
+              <li>Enter amount and confirm swap</li>
             </ol>
           </div>
         </div>
@@ -106,14 +97,14 @@ export function HowToBuy() {
             Important Notes
           </h4>
           <ul className="list-disc list-inside text-white/70 space-y-1">
-            <li>Always verify the contract address before swapping</li>
-            <li>Set slippage to 7-10% to account for the buy/sell tax</li>
-            <li>Keep some ETH in your wallet for gas fees on Base (they're very low, but still required)</li>
-            <li>Join our Telegram for help if you encounter any issues during the purchase process</li>
+            <li>Contract address: 0x84773a9006d0587c1eAd066160ba00b5aE54E84d</li>
+            <li>Always verify the contract before swapping</li>
+            <li>Set slippage to 7-10% for successful transactions</li>
+            <li>Keep some ETH in your wallet for gas fees (very low on Base)</li>
+            <li>For help, join our official Telegram group</li>
           </ul>
         </div>
       </div>
     </div>
   )
 }
-

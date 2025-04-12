@@ -1,9 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Twitter } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Twitter } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { NewsletterSubscribe } from "@/components/newsletter-subscribe"
+import { Button } from "@/components/ui/button";
+import { NewsletterSubscribe } from "@/components/newsletter-subscribe";
 
 export function Footer() {
   return (
@@ -12,23 +12,48 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-4">
-              <Image src="/pumpcat-logo.png" alt="PumpCat Logo" width={50} height={50} className="rounded-full" />
+              <Image
+                src="/pumpcat-logo.png"
+                alt="PumpCat Logo"
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
               <div>
                 <h3 className="text-xl font-bold text-white">PumpCat</h3>
-                <p className="text-white/60 text-sm">Where Every Meow is a Green Candle</p>
+                <p className="text-white/60 text-sm">
+                  Where Every Meow is a Green Candle
+                </p>
               </div>
             </div>
             <p className="text-white/60 text-sm mb-4">
-              The cat that pumps charts harder than your favorite meme coin, exclusively on Base chain.
+              The cat that pumps charts harder than your favorite meme coin,
+              exclusively on Base chain.
             </p>
             <div className="flex gap-4">
-              <Link href="https://x.com/SunfaceAI" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon" className="text-white hover:text-green-400">
+              <Link
+                href="https://x.com/SunfaceAI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-white hover:text-green-400"
+                >
                   <Twitter className="h-5 w-5" />
                 </Button>
               </Link>
-              <Link href="https://t.me/pumpcatofficial" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon" className="text-white hover:text-green-400">
+              <Link
+                href="https://t.me/PumpCat_degen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-white hover:text-green-400"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -40,8 +65,16 @@ export function Footer() {
                   </svg>
                 </Button>
               </Link>
-              <Link href="https://discord.gg/pumpcat" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon" className="text-white hover:text-green-400">
+              <Link
+                href="https://discord.com/channels/1357898232658661386/1359004865635946646"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-white hover:text-green-400"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -59,22 +92,40 @@ export function Footer() {
           <div className="flex flex-col">
             <h4 className="text-white font-bold text-lg mb-4">Quick Links</h4>
             <div className="grid gap-2">
-              <Link href="#about" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="#about"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 About
               </Link>
-              <Link href="#tokenomics" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="#tokenomics"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 Tokenomics
               </Link>
-              <Link href="#roadmap" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="#roadmap"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 Roadmap
               </Link>
-              <Link href="#team" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="#team"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 Team
               </Link>
-              <Link href="#how-to-buy" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="#how-to-buy"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 How to Buy
               </Link>
-              <Link href="#faq" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="#faq"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 FAQ
               </Link>
             </div>
@@ -83,7 +134,10 @@ export function Footer() {
           <div className="flex flex-col">
             <h4 className="text-white font-bold text-lg mb-4">Resources</h4>
             <div className="grid gap-2">
-              <Link href="/whitepaper.pdf" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="/whitepaper.pdf"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 Whitepaper
               </Link>
               <Link
@@ -100,13 +154,22 @@ export function Footer() {
               >
                 Chart
               </Link>
-              <Link href="/audit.pdf" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="/audit.pdf"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 Audit
               </Link>
-              <Link href="/media-kit.zip" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="/media-kit.zip"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 Media Kit
               </Link>
-              <Link href="/brand.pdf" className="text-white/60 hover:text-green-400 transition">
+              <Link
+                href="/brand.pdf"
+                className="text-white/60 hover:text-green-400 transition"
+              >
                 Brand Guidelines
               </Link>
             </div>
@@ -115,28 +178,39 @@ export function Footer() {
           <div className="flex flex-col">
             <h4 className="text-white font-bold text-lg mb-4">Stay Updated</h4>
             <p className="text-white/60 text-sm mb-4">
-              Subscribe to our newsletter for the latest updates, airdrops, and exclusive offers.
+              Subscribe to our newsletter for the latest updates, airdrops, and
+              exclusive offers.
             </p>
             <NewsletterSubscribe />
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/60 text-sm">© 2025 PumpCat. All rights reserved.</p>
+          <p className="text-white/60 text-sm">
+            © 2025 PumpCat. All rights reserved.
+          </p>
           <div className="flex gap-6">
-            <Link href="/terms" className="text-white/60 hover:text-green-400 text-sm">
+            <Link
+              href="/terms"
+              className="text-white/60 hover:text-green-400 text-sm"
+            >
               Terms of Service
             </Link>
-            <Link href="/privacy" className="text-white/60 hover:text-green-400 text-sm">
+            <Link
+              href="/privacy"
+              className="text-white/60 hover:text-green-400 text-sm"
+            >
               Privacy Policy
             </Link>
-            <Link href="/disclaimer" className="text-white/60 hover:text-green-400 text-sm">
+            <Link
+              href="/disclaimer"
+              className="text-white/60 hover:text-green-400 text-sm"
+            >
               Disclaimer
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
